@@ -1,0 +1,29 @@
+
+/* animation css */
+@keyframes slide-in-from-right-to-left {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  .animate-slide-in-from-right-to-left {
+    animation: slide-in-from-right-to-left .3s forwards;
+  }
+
+@keyframes slide-in-from-left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in-from-left-to-right {
+    animation: slide-in-from-left-to-right 1s ease-in-out;
+}
